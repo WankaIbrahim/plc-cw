@@ -6,7 +6,7 @@ tokens :-
 $white+         ;
 --Comparison Operators
 "=="          { \p s -> PT p TokenEquals}
-"!="          { \p s -> PT p TokenNotEqual}
+"!="          { \p s -> PT p TokenNotEquals}
 "<"           { \p s -> PT p TokenLessThan}
 ">"           { \p s -> PT p TokenGreaterThan}
 "<="          { \p s -> PT p TokenLessOrEqual}
@@ -31,7 +31,6 @@ ELSE          { \p s -> PT p TokenElse}
 --Join Types
 CJOIN         { \p s -> PT p TokenCJoin}
 JOIN          { \p s -> PT p TokenJoin}
-
 
 --Sorting Order
 ASC           { \p s -> PT p TokenAscending}
